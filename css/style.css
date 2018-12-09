@@ -1,0 +1,27 @@
+html, body {
+  background-color: black;
+}
+.top {
+	width: 150px;
+	height: 300px;
+  position: absolute;
+
+  top: calc(50% - 150px);
+  right: calc(50% - 75px);
+}
+
+.bottom {
+  width: 600px;
+  height: 600px;
+  position: absolute;
+
+  top: calc(50% - 300px);
+  right: calc(50% - 300px);
+  
+  animation: spin 8s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
